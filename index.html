@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>후원자 목록</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                font-family: 'Noto Sans KR', sans-serif;
+            }
+
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            main {
+                flex: 1;
+                color: #e10098;
+            }
+
+            footer {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 10px 0;
+                width: 100%;
+            }
+
+            .card {
+                border-radius: 8px;
+                padding: 20px;
+                color: white;
+                transition: transform 0.2s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card .card-title {
+                font-weight: bold;
+                margin-bottom: 10px;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+
+            .card .card-text {
+                font-weight: bold;
+                text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            }
+        </style>
+    </head>
+    <body>
+        <header class="text-white text-center py-4" style="background-color: #e10098;">
+            <h1>러브라이브! 시리즈 한국 팬 일동</h1>
+            <h4>ラブライブ！シリーズ韓国ファン一同
+</h4>
+        </header>
+        <main class="container my-5">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">루비아(ルビア)</h5>
+                        <p class="card-text">한국에서의 첫 니지가사키 라이브! 최고로 TOKIMEKI 넘치는 라이브가 되길 바라고 있어요! 사랑해요</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">시아しあ</h5>
+                        <p class="card-text">러브라이브 시리즈 아시아 투어 축하합니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">Nare(ナレ)</h5>
+                        <p class="card-text">무지갯빛과 다이스키로 가득 채워지도록! 한국에 와줘서 고마워!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">슈실</h5>
+                        <p class="card-text">니지동의 내한 라이브를 환영합니다!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">뺙뺙(ピャク)</h5>
+                        <p class="card-text">韓国で叶える新しい物語! 같이 즐거운 추억 만들어요!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">KimInHo桜子</h5>
+                        <p class="card-text">축복하라! 니지가사키 첫 한국 라이브!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">정어리</h5>
+                        <p class="card-text">러브라이브 시리즈 화이팅!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">여권</h5>
+                        <p class="card-text">화정언덕에 5년만에 무지개가 활짝 피었네 ! 경사로다로 부탁드립니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">109번</h5>
+                        <p class="card-text">서울의 겨울을 만끽하고 즐기세요!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">물린이였던것</h5>
+                        <p class="card-text">한국에서 좋은 기억만 가져가세요!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">아무고토모름</h5>
+                        <p class="card-text">最高のLove！ 最高のLive！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">파스타</h5>
+                        <p class="card-text">╰(*´︶`*)╯♡</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">핀펫</h5>
+                        <p class="card-text">사랑해</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">톰제리</h5>
+                        <p class="card-text">아시아 투어 내한을 환영합니다! 大好きです！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">오서균</h5>
+                        <p class="card-text">한오환 니지~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">Tak</h5>
+                        <p class="card-text">최고의 Love 최고의 Live</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">미빔</h5>
+                        <p class="card-text">ようこそ韓国へ</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">히비카세</h5>
+                        <p class="card-text">유메잇뽀</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">シロクマ</h5>
+                        <p class="card-text">니지가사키 최고!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">B5=BAM</h5>
+                        <p class="card-text">모두 함께 이뤄가는 이야기 앞으로 함께</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">덕무원신짱</h5>
+                        <p class="card-text">韓国にようこそ</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">Sayama</h5>
+                        <p class="card-text">니지가사키 화이팅!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">극좌표계</h5>
+                        <p class="card-text">だからどんな時も夢が僕らの太陽さ</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">눈토끼</h5>
+                        <p class="card-text">앞으로도 동료이자 라이벌 하기를~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">Gyuni</h5>
+                        <p class="card-text">来てくれてありがとう！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">nijigasaki_Love</h5>
+                        <p class="card-text">行こう！みんなの虹を咲かせに！！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">HAMA2007</h5>
+                        <p class="card-text">서울의 밤하늘을 또 한번 무지개빛으로!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">김준수</h5>
+                        <p class="card-text">도키메키를 떠올리는거야 </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">리오</h5>
+                        <p class="card-text">떳다 떳다 리나짱 보-드!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">Whinnie</h5>
+                        <p class="card-text">皆さん、来てくれてありがとうごさいます！！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">으어</h5>
+                        <p class="card-text">어서와~~ 계속 기다렸다구~~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">hitiet2</h5>
+                        <p class="card-text">ㅎㅌㄹㄷㅋㄴㅌㅇㄹㅂㄴㅇㅇ!!!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">타스</h5>
+                        <p class="card-text">유우뽀무 영원히!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">달에구름</h5>
+                        <p class="card-text">큰거 왔다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">네피테아</h5>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">雪風503</h5>
+                        <p class="card-text">TOKIMEKI NIJIGASAKI</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">하늘연달엿새</h5>
+                        <p class="card-text">니지가사키여 영원하라!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">폭탄두개</h5>
+                        <p class="card-text">니지동 사랑해요!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">갈닢</h5>
+                        <p class="card-text">한국에 와줘서 고마워! 사랑해! </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">와인블랙</h5>
+                        <p class="card-text">모두가 함께 만들어가는 이야기</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">컬러풀</h5>
+                        <p class="card-text">니지가쿠의 내한을 환영합니다!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">ENANTIO</h5>
+                        <p class="card-text">목소리 들려줘 声を聞かせて</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">단별</h5>
+                        <p class="card-text">럽생 2년 이날만을 기다려왔다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">Sio5</h5>
+                        <p class="card-text">소금이 화이팅</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">적요</h5>
+                        <p class="card-text">니지 내한을 환영합니다.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">나기</h5>
+                        <p class="card-text">하야시 코코상! 이 추운 한국겨울에 세츠나 스칼렛스톰으로 녹여주시옵소서!!! </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">골드마리오</h5>
+                        <p class="card-text">韓国でライブするという約束を守ってくれてありがとうございます！！！</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">행복한나날들</h5>
+                        <p class="card-text">ニジガクのみなさんようこそ韓国へ. 니지동 여러분 진심으로 환영합니다! 언제나 추억과 행복을 준 러브라이브 늘 응원하겠습니다.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">안달뷩</h5>
+                        <p class="card-text">올해도 니지동 멤버들 내한 방문을 하셔서 환영합니다. 내년 2025년 새해 복 많이 받고 열심히 내한공연을 응원하겠습니다.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">노조노조밍</h5>
+                        <p class="card-text">니지가사키의 내한 공연을 손꼽아 기다렸어요!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">세츠나천사</h5>
+                        <p class="card-text">니지동의 첫 내한공연을 축하드립니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">루오온</h5>
+                        <p class="card-text">My life for love live</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">国会議事堂前</h5>
+                        <p class="card-text">5년만에 돌아온 화정체육관</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">스미쿠쿠카논</h5>
+                        <p class="card-text">한국에서도 우리와 함께 새로운 이야기를 이루어나가자</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">나래낭자</h5>
+                        <p class="card-text">언제나 보고 싶어</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">나왜</h5>
+                        <p class="card-text">한국 러브라이버 화이팅!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">안뇽안뇸</h5>
+                        <p class="card-text">시험기간 5일 전 최고의 선택</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">かねありえい</h5>
+                        <p class="card-text">여기까지 온 이상 죽을때까지 함께</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">네주</h5>
+                        <p class="card-text">니지가사키 모두 한국에서 잘 즐기다 가길!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">すわっぷ</h5>
+                        <p class="card-text">生まれたのはトキメキ</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">홍사민</h5>
+                        <p class="card-text">대세는? 백합</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">LEAF</h5>
+                        <p class="card-text">虹の来韓、歓迎する！ 사고없이 재밌게 즐기고 다음엔 완전체가 올 수 있도록 다들 파이팅!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">니지기사키브릿팝동호회</h5>
+                        <p class="card-text">니지기사키 멤버들 여권을 훔치고싶어요! 영원히 우리랑 함께해</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">요헤치보라케</h5>
+                        <p class="card-text">and i also 럽라 좋아</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">맷토</h5>
+                        <p class="card-text">待ってたぜ～～</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">カン</h5>
+                        <p class="card-text">古い宿願、4年ぶりに叶ってよかったです。</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">Kosmo</h5>
+                        <p class="card-text">니지가사키 라이브를 한국에서 볼 수 있어서 너무 행복해요! 다음에는 멤버 전원이 와 줬으면 좋겠습니다!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">후지시마 메구-아더</h5>
+                        <p class="card-text">전력으로 날아보자! 전력으로 빛나보자! 전력으로 꽃을 피워보자! I live</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">한국의 나체메이트</h5>
+                        <p class="card-text">다음엔 풀맴버로 내한와주세요</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">쿠카</h5>
+                        <p class="card-text">안녕하세요 감사해요 잘 있어요 다시 만나요</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">近江伊豆箱根</h5>
+                        <p class="card-text">쳬미와 니지동여러분의 내한을 열렬히 환영합니다!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">돌케앤스트라</h5>
+                        <p class="card-text">앞으로도 계속 내한해주세요</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">CYB</h5>
+                        <p class="card-text">와주셔서 고마워요! 모두가 함께 즐거운 추억을 이뤄나가요! </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">서울대 애니뮤</h5>
+                        <p class="card-text">러브라이브 및 솜덩어리 소모임은 니지동 내한을 열렬히 환영합니다!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">リンディル</h5>
+                        <p class="card-text">니지동 화이팅!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">까망상자</h5>
+                        <p class="card-text">러브라이브 시리즈 아시아 투어 순항 기원!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">닼</h5>
+                        <p class="card-text">한국에 어서오세요!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">티엔윈드</h5>
+                        <p class="card-text">러브라이브는 인생입니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">마이온</h5>
+                        <p class="card-text">최고를 향해 Fly!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">ILLHVHL</h5>
+                        <p class="card-text">니지동의 첫 내한공연 사랑합니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">Sam</h5>
+                        <p class="card-text">ヒトリダケナンテエラベナイヨー</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">알칼리</h5>
+                        <p class="card-text">캐스트와 팬 모두 고려대학교에서 좋은 추억 만들기를 바랍니다!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">오후의 마루</h5>
+                        <p class="card-text">끝나지않을 두근두근함을 줘서 고마워!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">성준쿤</h5>
+                        <p class="card-text">「모두 함께 이뤄가는 이야기」가 계속될 수 있기를</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(216, 28, 47);">
+                        <h5 class="card-title">나는야 민달팽이</h5>
+                        <p class="card-text">한국에 와줘서 고마워요~~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(132, 195, 110);">
+                        <h5 class="card-title">무지개좋아</h5>
+                        <p class="card-text">海を越えて咲いた虹色の夢</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(156, 165, 185);">
+                        <h5 class="card-title">SuperBlue</h5>
+                        <p class="card-text">19년의 감동을 다시한번!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(55, 180, 132);">
+                        <h5 class="card-title">김도현</h5>
+                        <p class="card-text">니지가사키학원 스쿨아이돌 동호회의 내한을 환영합니다</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(214, 213, 202);">
+                        <h5 class="card-title">동경하던빛을쫓아</h5>
+                        <p class="card-text">역경을 딛고 나아가는 스쿨아이돌.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(248, 200, 196);">
+                        <h5 class="card-title">ShizuDuceR</h5>
+                        <p class="card-text">러브라이브 다이스키</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(29, 29, 29);">
+                        <h5 class="card-title">한펜</h5>
+                        <p class="card-text">니지가사키 최고!!!!! 항상 고마워!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(237, 125, 149);">
+                        <h5 class="card-title">업사다</h5>
+                        <p class="card-text">러브라이브 아시아 투어 화이팅!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(231, 214, 0);">
+                        <h5 class="card-title">KuKuDas</h5>
+                        <p class="card-text">한국에 어서와요~~~</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(1, 183, 237);">
+                        <h5 class="card-title">폴라리스</h5>
+                        <p class="card-text">우리가 함께 만들어가는 무지개가 펼쳐진 길</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(72, 94, 198);">
+                        <h5 class="card-title">さだはる</h5>
+                        <p class="card-text">世界中に虹を架けよう</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(255, 88, 0);">
+                        <h5 class="card-title">장현성</h5>
+                        <p class="card-text">니지가사키와 만난 기적은 무엇보다 소중한 보물이야! 앞으로도 쭉 최선을 다해서 열심히 응원할게. 니지가사키가 정말 좋아!!</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card text-center shadow-sm" style="background-color: rgb(166, 100, 160);">
+                        <h5 class="card-title">하늘</h5>
+                        <p class="card-text">韓国に来てくれてありがとう どんな時も虹ヶ咲が僕らの太陽さ 와줘서 고마워요 어떤 때라도 니지가사키가 우리의 태양이야</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="bg-dark text-white text-center py-3">
+            <p>© 2024 Love Live! Series Asia Tour 2024 ~모두 함께 이뤄가는 이야기~</p>
+            <p>서울 공연 팬 프로젝트</p>
+        </footer>
+    </body>
+</html>
